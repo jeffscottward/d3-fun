@@ -2,10 +2,8 @@ var gulp = require('gulp'),
     livereload = require('gulp-livereload'),
     watch = require('gulp-watch');
 
-gulp.task('less', function() {
-  gulp.src('less/*.less')
+gulp.task('js', function() {
+  gulp.src('js/*.js')
     .pipe(watch())
-    .pipe(less())
-    .pipe(gulp.dest('css'))
     .pipe(livereload());
 });

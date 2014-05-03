@@ -16,5 +16,3 @@ d3.select("main").selectAll('div')
   .style("height", function(d) {
     return d*2 + "px";
   });
-
-  
