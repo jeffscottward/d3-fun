@@ -1,9 +1,9 @@
-var gulp = require('gulp'),
+var gulp =       require('gulp'),
     livereload = require('gulp-livereload'),
-    watch = require('gulp-watch');
+    watch =      require('gulp-watch');
 
-gulp.task('js', function() {
-  gulp.src('js/*.js')
-    .pipe(watch())
-    .pipe(livereload());
-});
+gulp.task('watch', function() {
+  gulp.src('*')
+      .pipe(watch())
+      .pipe(livereload());
+  });
